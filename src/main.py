@@ -7,7 +7,7 @@ import dataset_tools as dtools
 import supervisely as sly
 from dotenv import load_dotenv
 
-from src.convert import convert_and_upload_supervisely_project
+from convert import convert_and_upload_supervisely_project
 
 # !  Checklist before running the app:
 # 1. Set project name and project name full.
@@ -22,37 +22,31 @@ from src.convert import convert_and_upload_supervisely_project
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "basic name (short)"
-PROJECT_NAME_FULL: str = "full name (long)"
+PROJECT_NAME: str = "Maize Tassel Detection"
+PROJECT_NAME_FULL: str = "Maize Tassel Detection from UAV Imagery Using Deep Learning"
 
 
 ##################################
 # * After uploading to instance  #
 ##################################
-LICENSE: str = "input license here"
-# Available licenses: ["CC0", "CC-BY"]
+LICENSE: str = "CCO"
 
-INDUSTRIES: List[str] = ["input industries here"]
-# Available industries: ["general domain"]
+INDUSTRIES: List[str] = ["general domain"]
 
-CV_TASKS: List[str] = ["input cv tasks here"]
-# Available cv tasks: ["semantic segmentation", "instance segmentation"]
+CV_TASKS: List[str] = ["object detection"]
 
-ANNOTATION_TYPES: List[str] = ["input annotation types here"]
-# Available annotation types: ["semantic segmentation", "instance segmentation"]
+ANNOTATION_TYPES: List[str] = ["object detection"]
 
-RELEASE_YEAR: int = 2000
-HOMEPAGE_URL: str = "input http url here"
-# e.g. "https://some.com/dataset/homepage"
+RELEASE_YEAR: int = 2021
+HOMEPAGE_URL: str = "https://zenodo.org/record/4922074#.Yk_rlX9Bzmg"
 
-DOWNLOAD_ORIGINAL_URL: Optional[str] = "input http url here"
-# e.g. "https://some.com/dataset/download"
+DOWNLOAD_ORIGINAL_URL: Optional[
+    str
+] = "https://zenodo.org/record/4922074/files/Maize_Tassels_Recognition.zip?download=1"
 
-PREVIEW_IMAGE_ID: int = 0
-# This should be filled AFTER uploading images to instance, just ID of any image.
+PREVIEW_IMAGE_ID: int = 348974
 
-GITHUB_URL: str = "input http url here"
-# URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
+GITHUB_URL: str = "https://github.com/dataset-ninja/maize-tassel-detection"
 
 # endregion
 
