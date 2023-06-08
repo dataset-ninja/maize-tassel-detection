@@ -1,11 +1,6 @@
-If you make use of the Synthetic RGB-D data for plant segmentation data, please cite the following reference (to be prepared after the challenge workshop) in any publications:
 
 ```
-@misc{synthetic-plants,
-	author = "EL BAHA FAROUK",
-	title = "Synthetic RGB-D data for plant segmentation",
-	howpublished = "https://www.kaggle.com/datasets/harlequeen/synthetic-rgbd-images-of-plants"
-}
+Shi, Yeyin, Alzadjali, Aziza, Alali, Mohammed, Veeranampalayam-Sivakumar, Arun-Narenthiran, Deogun, Jitender, Scott, Stephen, & Schnable, James. (2021). Maize tassel detection from UAV imagery using deep learning [Data set]. https://doi.org/10.5061/dryad.r2280gbcg
 ```
 
-[🔗 Source](https://www.kaggle.com/datasets/harlequeen/synthetic-rgbd-images-of-plants).
+[🔗 Source](https://zenodo.org/record/4922074#.Yk_rlX9Bzmg).
