@@ -2,19 +2,19 @@ from typing import Dict, List, Optional, Union
 
 from dataset_tools.templates import (
     AnnotationType,
-    CVTask,
-    Industry,
-    Domain,
-    Research,
-    License,
     Category,
+    CVTask,
+    Domain,
+    Industry,
+    License,
+    Research,
 )
 
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Maize tassel detection"
-PROJECT_NAME_FULL: str = "Maize tassel detection from UAV imagery using deep learning"
+PROJECT_NAME: str = "Maize Tassel Detection"
+PROJECT_NAME_FULL: str = "Maize Tassel Detection from UAV Imagery Using Deep Learning"
 
 ##################################
 # * After uploading to instance ##
@@ -22,10 +22,8 @@ PROJECT_NAME_FULL: str = "Maize tassel detection from UAV imagery using deep lea
 LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
     Industry.Agricultural(),
-    Domain.Industrial(),
-    Research.Agricultural(),
 ]
-CATEGORY: Category = Category.Agriculture()
+CATEGORY: Category = Category.Agriculture(extra=Category.Drones())
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
@@ -53,11 +51,26 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[str] = "https://doi.org/10.5061/dryad.r2280gbcg"
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://zenodo.org/record/4922074/export/hx"
+AUTHORS: Optional[List[str]] = [
+    "Shi, Yeyin",
+    "Alzadjali, Aziza",
+    "Alali, Mohammed",
+    "Veeranampalayam-Sivakumar",
+    "Arun-Narenthiran",
+    "Deogun, Jitender",
+    "Scott, Stephen",
+    "Schnable, James",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "University of Nebraska-Lincoln, USA",
+    "University of Illinois at Urbana Champaign, USA",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.unl.edu/home/",
+    "https://illinois.edu/",
+]
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: Optional[List[str]] = None

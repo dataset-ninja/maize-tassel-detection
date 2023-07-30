@@ -1,9 +1,9 @@
-**Maize Tassel Detection** (Maize Tassel Detection from UAV Imagery Using Deep Learning) is a dataset for object detection tasks. It is applicable or relevant across various domains.
+**Maize Tassel Detection from UAV Imagery Using Deep Learning** is a dataset for an object detection task. It is used in the agricultural industry. 
+
+
 
 The dataset consists of 776 images with 3553 labeled objects belonging to 1 single class (*tassels*).
 
-Each image in the Maize Tassel Detection dataset has bounding boxes annotations. There are 101 (13% of the total) unlabeled images (i.e. without annotations). There is 1 split in the dataset: *ds0* (776 images). The dataset was released in 2021.
+Images in the Maize Tassel Detection dataset have bounding box annotations. There are 101 (13% of the total) unlabeled images (i.e. without annotations). There are no pre-defined <i>train/val/test</i> splits in the dataset. The dataset was released in 2021 by the [University of Nebraska-Lincoln, USA](https://www.unl.edu/home/) and [University of Illinois at Urbana Champaign, USA](https://illinois.edu/).
 
-Here is the visualized example of the single *tassels* class:
-
-[Dataset classes](https://github.com/dataset-ninja/maize-tassel-detection/raw/main/visualizations/classes_preview.webm)
+<img src="https://github.com/dataset-ninja/maize-tassel-detection/raw/main/visualizations/poster.png">
