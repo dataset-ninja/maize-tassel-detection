@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "Maize Tassel Detection"
 PROJECT_NAME_FULL: str = "Maize Tassel Detection from UAV Imagery Using Deep Learning"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -45,7 +45,9 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/maize-tassel-detection"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://zenodo.org/record/4922074/files/Maize_Tassels_Recognition.zip?download=1"
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://zenodo.org/record/4922074/files/Maize_Tassels_Recognition.zip?download=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -55,7 +57,9 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://doi.org/10.3389/frobt.2021.600410"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"
+REPOSITORY: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"
 
 CITATION_URL: Optional[str] = "https://zenodo.org/record/4922074/export/hx"
 AUTHORS: Optional[List[str]] = [
@@ -69,8 +73,14 @@ AUTHORS: Optional[List[str]] = [
     "Schnable, James",
 ]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Dryad"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://datadryad.org/"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "University of Nebraska-Lincoln, USA",
+    "University of Illinois at Urbana Champaign, USA",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.unl.edu/home/",
+    "https://illinois.edu/",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
