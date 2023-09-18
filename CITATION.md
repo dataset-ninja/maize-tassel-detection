@@ -45,4 +45,4 @@ If you make use of the Maize Tassel Detection data, please cite the following re
 }
 ```
 
-[🔗 Source](https://zenodo.org/record/4922074/export/hx)
+[Source](https://zenodo.org/record/4922074/export/hx)

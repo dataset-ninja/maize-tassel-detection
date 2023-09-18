@@ -1,1 +1,7 @@
 According to the authors of **Maize tassel detection** dataset, the timing of flowering profoundly impacts crop productivity in agriculture, as early flowering can lead to premature maturation and late flowering may result in season-related damage. Maize, in particular, is highly sensitive during its flowering stage. The study this dataset was created for focuses on the development and comparison of two deep learning-based methods for automatic tassel detection using imagery from unmanned aerial vehicles.
+
+The aerial RGB imagery was collected by a UAV (DJI Phantom 3 Pro) over a maize breeding field located in Mead, Nebraska, in late July, 2017. The UAV was flying at a low altitude (20 m AGL). The field has a large number of different varieties. Some of them were flowering/tasseling. 
+
+The maize tassels were later labelled and used to train CNN models to automatically detect the tassels.
+
+The raw images, characterized by a high resolution of 3000 × 4000 pixels, posed challenges in terms of precise labeling and the computational resources required for tassel identification. The authors divided each raw image into non-overlapping subimages measuring 1000 × 1000 pixels, creating a 3 × 4 grid of smaller images from each original image. These smaller images were subsequently utilized in the labeling process and for training the deep learning models.
