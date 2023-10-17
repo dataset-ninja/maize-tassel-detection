@@ -21,9 +21,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC0_1_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    Industry.Agricultural(),
-]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Agricultural()]
 CATEGORY: Category = Category.Agriculture(extra=Category.Drones())
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
@@ -59,7 +57,7 @@ PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://doi.org/10.338
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[
     Union[str, List[str], Dict[str, str]]
-] = "https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"
+] = {"Github":"https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"}
 
 CITATION_URL: Optional[str] = "https://zenodo.org/record/4922074/export/hx"
 AUTHORS: Optional[List[str]] = [
