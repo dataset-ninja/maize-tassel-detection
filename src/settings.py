@@ -57,7 +57,7 @@ PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://doi.org/10.338
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[
     Union[str, List[str], Dict[str, str]]
-] = {"Github":"https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"}
+] = {"GitHub":"https://github.com/azizanajeeb/Maize-Tassel-Object-Detection-with-Depp-Learning"}
 
 CITATION_URL: Optional[str] = "https://zenodo.org/record/4922074/export/hx"
 AUTHORS: Optional[List[str]] = [
@@ -70,6 +70,8 @@ AUTHORS: Optional[List[str]] = [
     "Scott, Stephen",
     "Schnable, James",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["yshi18@unl.edu"]
+
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "University of Nebraska-Lincoln, USA",
@@ -129,6 +131,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
