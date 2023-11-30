@@ -1,6 +1,6 @@
 Dataset **Maize Tassel Detection** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/g/1/Gb/em6ZTet7iOgqgJLWtkGev6YkNqmEDyHnzHgArw1CNHyBR9BsPnbzogPFSh6yylXPxkHHvR9rVBFPQ4kLFkYUbAHMGgO6GqWOVvLg8ThLpW3OphLvUQFWyxRmmgX4.tar)
+ [Download](https://www.dropbox.com/scl/fi/e52vab6l3vh0yd5vfmdyz/maize-tassel-detection-DatasetNinja.tar?rlkey=0kzj91tcc1osk7tovl4lhzue3&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
